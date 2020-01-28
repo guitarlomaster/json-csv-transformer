@@ -1,0 +1,13 @@
+key,en,eu,pl,ru
+M_AUTH.authorization_title,Login,Login,Login,Авторизация
+M_AUTH.authorization_note,"Sign in via your 101XP.com account or a social media profile, or continue as a guest","Sign in via your 101XP.com account or a social media profile, or continue as a guest","Sign in via your 101XP.com account or a social media profile, or continue as a guest","Авторизуйтесь через 101xp.com или социальную сеть либо продолжите как гость"
+M_AUTH.btn-through_101,"Log in with 101XP ID","Log in with 101XP ID","Log in with 101XP ID","Войти через 101XP ID"
+M_AUTH.btn-guest,"Continue as a guest","Continue as a guest","Continue as a guest","Продолжить как гость"
+M_AUTH.account-have_one,"Already have a 101XP ID?","Already have a 101XP ID?","Already have a 101XP ID?","Уже есть 101XP ID?"
+M_AUTH.account-not_have_one,"Register a new 101XP ID to receive a guaranteed gift!","Register a new 101XP ID to receive a guaranteed gift!","Register a new 101XP ID to receive a guaranteed gift!","Создайте 101XP ID!"
+M_AUTH.btn-login,Sign In,Sign In,Sign In,Войти
+M_AUTH.btn-register,"New 101XP ID","New 101XP ID","New 101XP ID","Создать 101XP ID"
+M_AUTH.welcome_back,"Welcome back!","Welcome back!","Welcome back!","С возвращением!"
+M_AUTH.auth_via_101_account,"Sign in via 101XP ID.","Sign in via 101XP ID.","Sign in via 101XP ID.","Зайдите в игру через 101XP ID."
+M_AUTH.btn-cancel,"Cancel","Cancel","Cancel","Отменить"
+M_AUTH.btn-next,"OK","OK","OK","Далее"
