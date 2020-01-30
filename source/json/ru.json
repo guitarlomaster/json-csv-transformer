@@ -1,7 +1,7 @@
 {
   "M_AUTH": {
     "authorization_title": "Авторизация",
-    "authorization_note": "Авторизуйтесь через 101xp.com или социальную сеть либо продолжите как гость",
+    "authorization_note": "Авторизуйтесь через \"101xp.com\" или социальную сеть либо продолжите как гость",
     "btn-through_101": "Войти через 101XP ID",
     "btn-guest": "Продолжить как гость",
     "account-have_one": "Уже есть 101XP ID?",

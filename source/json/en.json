@@ -1,7 +1,7 @@
 {
   "M_AUTH": {
     "authorization_title": "Login",
-    "authorization_note": "Sign in via your 101XP.com account or a social media profile, or continue as a guest",
+    "authorization_note": "Sign in via your \"101XP.com\" account or a social media profile, or continue as a guest",
     "btn-through_101": "Log in with 101XP ID",
     "btn-guest": "Continue as a guest",
     "account-have_one": "Already have a 101XP ID?",

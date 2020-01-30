@@ -21,9 +21,9 @@ function startWritingCsv() {
     });
 
     let stream = fs.createWriteStream(__dirname + '/dist/csv/translations.csv');
-    stream.once('open', function () {
+    stream.once('open', () => {
         stream.write(title_str + '\n');
-        getStr(function (item) {
+        getStr((item) => {
             stream.write(item + '\n');
         });
     });
@@ -45,15 +45,37 @@ function getStr(cb) {
         }
         langLinesObj[locale] = langLinesArr;
     });
-    const resultLinesArr = [];
+    let resultLinesArr = [];
     const langKeys = Object.keys(langLinesObj);
     for(let i = 0; i < langKeys.length; i++) {
-        const key = langKeys[i];
+        const locale = langKeys[i];
         if (i === 0) {
-            resultLinesArr.push(...langLinesObj[key]);
+            for(let item of langLinesObj[locale]) {
+                let resultStr = '';
+                const strArr = item.split('"');
+                if (strArr.length > 3) {
+                    resultStr += strArr.splice(0, 1);
+                    strArr.splice(strArr.length - 1, 1);
+                    const resultArr = [''];
+                    resultArr.push(strArr.join('""'));
+                    resultArr.push('');
+                    resultStr += resultArr.join('"');
+                    resultLinesArr.push(resultStr);
+                } else {
+                    resultLinesArr.push(item);
+                }
+            }
         } else {
             for(let i1 = 0; i1 < resultLinesArr.length; i1++) {
-                const str = langLinesObj[key][i1].split('"')[1];
+                const strArr = langLinesObj[locale][i1].split('"');
+                let str = '';
+                if (strArr.length > 3) {
+                    strArr.splice(0, 1);
+                    strArr.splice(strArr.length - 1, 1);
+                    str = strArr.join('""');
+                } else {
+                    str = strArr[1];
+                }
                 resultLinesArr[i1] += `,"${str}"`
             }
         }
